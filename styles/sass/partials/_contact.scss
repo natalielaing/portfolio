@@ -1,0 +1,124 @@
+
+.contact {
+    background: #f7f7f7;
+    min-height: 50vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+
+.contactTitle {
+    text-align: center;
+
+    p {
+        padding: 20px 0;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        color: #878d8d;
+        font-weight: 600;
+        font-size: .5rem;
+    }
+
+    h2 {
+        font-size: 36px;
+        z-index: 1;
+        position: relative;
+        display: inline-block;
+        font-weight: 700;
+        padding-bottom: 0px;
+        margin-bottom: 60px;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 5px;
+            width: 50px;
+            bottom: -30px;
+            background: #f47a65;
+            margin: 0 auto;
+            box-shadow: 0px 10px 24px rgba(0,0,0,0.3);
+        }
+      }
+    }
+
+.contactInformation {
+    ul {
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+    }
+    li {
+        box-shadow: 0 0px 0px 10px rgba(255, 79, 100, 0.18);
+        border-radius: 50px;
+        background: #f47a65;
+        margin: 0 20px;
+        transition: transform .2s;
+    }
+    i {
+        text-align: center;
+        color: #333;
+        height: 45px;
+        width: 45px;
+        line-height: 45px;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.contactForm {
+    form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        .name, .email, .message {
+            border: none;
+            border-bottom: solid 2px grey;
+            background-color: #f7f7f7;
+            color: grey;
+            text-align: left;
+            padding: 20px 10px;
+            margin: 30px;
+        }
+        .name, .email {
+            width: calc(50% - 80px);
+        }
+        .message {
+            border: solid 2px grey;
+            width: calc(100% - 80px);
+        }
+        textarea {
+            resize: none;
+        }
+        input:focus,
+        textarea:focus {
+            outline: none;
+        }
+    }
+    input::placeholder, textarea::placeholder {
+        font-family: $baseFont;
+        font-size: 1rem;
+        color: grey;
+        opacity: 1;
+    }
+    
+    .submitButton {
+        text-align: center;
+        background-color: $secondary;
+        border: none;
+        padding: 5px 18px;
+        border-radius: 10%;
+        margin: 20px auto;
+        text-transform: uppercase;
+        color:#333;
+        &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+        }
+        }
+    }
+  
+

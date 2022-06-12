@@ -1,0 +1,46 @@
+@media (max-width: 1225px) {
+    .projectTwo, .projectFour {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 965px) {
+    .flexContainer {
+        display:block;
+
+        .aboutLeft, .aboutRight {
+            margin: 0 auto;
+            width:fit-content;
+        }
+
+        .aboutRight {
+            margin-top: 60px;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .stackIcons {
+        ul{
+            flex-wrap: wrap;
+            li {
+                max-width: 20%;
+            }
+        }
+    }
+}
+
+@media (max-width: 630px) {
+    form {
+        .name, .email {
+            width: calc(100% - 80px) !important;
+        }
+    }
+
+
+    header {
+        h1 {
+            font-size: 3rem;
+        }
+    }
+}
