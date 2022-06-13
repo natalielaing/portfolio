@@ -1,6 +1,6 @@
 
 .contact {
-    background: #f7f7f7;
+    background: $quaternary;
     min-height: 50vh;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -37,7 +37,7 @@
             height: 5px;
             width: 50px;
             bottom: -30px;
-            background: #f47a65;
+            background: $mainCoral;
             margin: 0 auto;
             box-shadow: 0px 10px 24px rgba(0,0,0,0.3);
         }
@@ -53,7 +53,7 @@
     li {
         box-shadow: 0 0px 0px 10px rgba(255, 79, 100, 0.18);
         border-radius: 50px;
-        background: #f47a65;
+        background: $mainCoral;
         margin: 0 20px;
         transition: transform .2s;
     }
@@ -77,7 +77,7 @@
         .name, .email, .message {
             border: none;
             border-bottom: solid 2px grey;
-            background-color: #f7f7f7;
+            background-color: $quaternary;
             color: grey;
             text-align: left;
             padding: 20px 10px;
@@ -113,7 +113,7 @@
         border-radius: 10%;
         margin: 20px auto;
         text-transform: uppercase;
-        color:#333;
+        color:$tertiary;
         &:hover {
         transform: scale(1.1);
         cursor: pointer;

@@ -35,14 +35,14 @@
     position: relative;
     img{
         border-radius: 30%;
-        border: 1px solid #f47a65;
+        border: 1px solid $mainCoral;
     }
     &::before {
         content: "";
         height: 200px;
         width: 200px;
         display: block;
-        background-color: #f47a65;
+        background-color: $mainCoral;
         border-radius: 3px;
         position: absolute;
         right: -30px;
@@ -54,7 +54,7 @@
         position: absolute;
         height: 150px;
         width: 120px;
-        border: 3px solid #f47a65;
+        border: 3px solid $mainCoral;
         border-radius: 6px;
         bottom: -30px;
         left: -30px;
@@ -75,7 +75,7 @@
     i {
         text-align: center;
         border: 1px solid #dee2e6;
-        color: #333;
+        color: $tertiary;
         height: 45px;
         width: 45px;
         line-height: 45px;

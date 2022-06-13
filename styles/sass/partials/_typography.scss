@@ -6,24 +6,20 @@
 
 body {
     font: 400 16px 'Poppins', sans-serif;
-    color: #333; 
+    color: $tertiary; 
 }
 
 p {
-    color: #6e7373;
+    color: $primary;
     font-weight: 300;
-    font-family: 'Poppins', sans-serif;
+    font-family: $headerFont;
 }
 
 h1, h2, h3, h4, h5, h6 {
     letter-spacing: 2px;
-    color: #333;
+    color: $tertiary;
     font-weight: 700;
 }
-
-// h1 {
-//     font-size: 2rem;
-// }
 
 h2 {
     font-size: 1.8rem;
@@ -39,16 +35,4 @@ h3 {
 h4 {
     font-size: .8rem;
     letter-spacing: 1px;
-}
-
-h5 {
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-    font-weight: 400;
-}
-
-h6 {
-    font-size: 0.7rem;
-    letter-spacing: 1px;
-    font-weight: 400;
 }

@@ -248,7 +248,7 @@ body {
 p {
   color: #6e7373;
   font-weight: 300;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins";
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -271,18 +271,6 @@ h3 {
 h4 {
   font-size: 0.8rem;
   letter-spacing: 1px;
-}
-
-h5 {
-  font-size: 0.8rem;
-  letter-spacing: 1px;
-  font-weight: 400;
-}
-
-h6 {
-  font-size: 0.7rem;
-  letter-spacing: 1px;
-  font-weight: 400;
 }
 
 header {

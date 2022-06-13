@@ -28,7 +28,7 @@
             height: 5px;
             width: 50px;
             bottom: -30px;
-            background: #f47a65;
+            background: $mainCoral;
             margin: 0 auto;
             box-shadow: 0px 10px 24px rgba(0,0,0,0.3);
         }
@@ -86,7 +86,7 @@
     border-radius: 5%;
 
     h3, h4, p {
-        color:#333;
+        color:$tertiary;
         text-align: center;
         padding: 5px;
         font-size: .8rem;

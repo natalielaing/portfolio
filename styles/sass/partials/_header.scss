@@ -3,7 +3,6 @@ header {
     background-size: cover;
     min-height: 40vh;
     padding-top: 80px;
-    // background-color: #fd725ab6;
 
     nav {
         background-color: #fd725ab6;
@@ -15,20 +14,20 @@ header {
 
     nav.sticky {
         background:white;
-        border-bottom: #333 dashed 1px;
+        border-bottom: $tertiary dashed 1px;
         z-index:3;
     }
 
     nav.sticky ul li a {
         text-decoration: overline;
-        color: #333;
+        color: $tertiary;
         &:hover{
             text-decoration: underline;
-            color: #333;
+            color: $tertiary;
         }
         &:focus{
             text-decoration: underline;
-            color: #333;
+            color: $tertiary;
         }
     }
     
@@ -67,11 +66,7 @@ header {
     h1 {
         margin-top: 2%;
         margin-bottom: 10px;
-        // margin-top: 20%;
-        // color: rgba(255, 255, 255, 0.747);
         color: white;
-        // background: #f47a65;
-        // background: white;
         border-radius: 10px;
         width: fit-content;
         padding: 5px 10px;
@@ -106,17 +101,11 @@ header {
 } 
 
 .hamburger {
-        // background-color: transparent;
         border: 10px;
-        // color: black;
         cursor: pointer;
         font-size: 30px;
-        // margin-left: 32px;
-        // float: left;
         line-height: 70px;
         display: none;
-        // position: relative;
-        // z-index: 1000;
       
       &:focus {
         outline: none;
