@@ -130,7 +130,18 @@
         font-size: .7rem !important;
     }
 
+    span {
+        display: none;
+    }
+
+    .icons {
+        i {
+        margin: 0px 5px;
+        }
+    }
+
 }
+
 
 @media (max-width: 425px) {
     .navMenu {
