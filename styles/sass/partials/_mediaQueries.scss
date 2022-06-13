@@ -17,6 +17,10 @@
             margin-top: 60px;
         }
     }
+
+    .aboutMe {
+        padding: 70px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -44,3 +48,104 @@
         }
     }
 }
+
+@media (max-width: 600px) {
+    nav {
+        background: #f47a65 !important;
+        border-bottom: none;
+        z-index:3;
+        width: 30% !important;
+        border-bottom-left-radius: 10%;
+        border-bottom-right-radius: 10%;
+        a {
+            color: white !important;
+        }
+    }
+    nav ul {
+    display: none;
+    flex-direction: column;
+  }
+  
+  nav ul.show {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 0;
+    left:30;
+    background: transparent;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+    .fa-bars {
+        background:#f47a65;
+        text-align: center;
+        height: fit-content;
+        width: fit-content;
+        padding: 5px;
+        border-radius: 20%;
+        &:hover {
+            color: #333;
+        }
+    }
+    .fa-xmark {
+        display: none;
+    }
+  }
+
+  .fa-bars.hide {
+      display: none;
+  }
+
+  .fa-xmark.present {
+      display: block;
+      left: 18%;
+      font-size: 1rem;
+      &:hover {
+          color: #333;
+      };
+  }
+
+  header nav.sticky ul li a {
+      text-decoration: none;
+  }
+
+  header nav.sticky {
+      border-bottom: none;
+  }
+
+
+}
+
+@media (max-width: 425px) {
+    .navMenu {
+        a {
+            font-size: .6rem;
+        }
+    }
+
+    .aboutLeft {
+        .imgContainer {
+            height: 200px;
+            width: 200px;
+            &::before {
+                display: none;
+            }
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    .aboutMe {
+        padding: 0;
+    }
+
+    
+}
+
+    

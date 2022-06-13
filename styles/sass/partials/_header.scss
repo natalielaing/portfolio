@@ -6,15 +6,11 @@ header {
     // background-color: #fd725ab6;
 
     nav {
-        display: flex;
-        justify-content: flex-end;
         background-color: #fd725ab6;
         position:fixed;
-        height:fit-content;
         top: 0;
         right: 0;
         left: 0;
-
     }
 
     nav.sticky {
@@ -24,7 +20,6 @@ header {
     }
 
     nav.sticky ul li a {
-        color: black;
         text-decoration: overline;
         color: #333;
         &:hover{
@@ -109,4 +104,23 @@ header {
     
 
 } 
+
+.hamburger {
+        // background-color: transparent;
+        border: 10px;
+        // color: black;
+        cursor: pointer;
+        font-size: 30px;
+        // margin-left: 32px;
+        // float: left;
+        line-height: 70px;
+        display: none;
+        // position: relative;
+        // z-index: 1000;
+      
+      &:focus {
+        outline: none;
+      }
+    }
+
 
