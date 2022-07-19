@@ -1,8 +1,11 @@
 header {
     background-image: url(../assets/header-background1.jpg);
-    background-size: cover;
     min-height: 40vh;
     padding-top: 80px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     nav {
         background-color: #fd725ab6;

@@ -16,7 +16,7 @@
         letter-spacing: 4px;
         color: #878d8d;
         font-weight: 600;
-        font-size: .5rem;
+        font-size: .8rem;
     }
 
     h2 {
@@ -44,39 +44,14 @@
       }
     }
 
-.contactInformation {
-    ul {
-        display: flex;
-        justify-content: center;
-        padding-left: 0;
-    }
-    li {
-        box-shadow: 0 0px 0px 10px rgba(255, 79, 100, 0.18);
-        border-radius: 50px;
-        background: $mainCoral;
-        margin: 0 20px;
-        transition: transform .2s;
-    }
-    i {
-        text-align: center;
-        color: #333;
-        height: 45px;
-        width: 45px;
-        line-height: 45px;
-        &:hover {
-            transform: scale(1.2);
-        }
-    }
-}
-
 .contactForm {
     form {
         display: flex;
         flex-direction: column;
-        margin-top: 50px;
+        // margin-top: 50px;
         .name, .email, .message {
             border: none;
-            border-bottom: solid 2px grey;
+            border-bottom: dotted 2px grey;
             background-color: $quaternary;
             color: grey;
             text-align: left;
@@ -87,7 +62,7 @@
             width: calc(50% - 80px);
         }
         .message {
-            border: solid 2px grey;
+            border: dotted 2px grey;
             width: calc(100% - 80px);
         }
         textarea {
@@ -118,6 +93,10 @@
         transform: scale(1.1);
         cursor: pointer;
         }
+        }
+
+        fieldset {
+            border: none;
         }
     }
   

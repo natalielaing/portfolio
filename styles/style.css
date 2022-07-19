@@ -275,9 +275,12 @@ h4 {
 
 header {
   background-image: url(../assets/header-background1.jpg);
-  background-size: cover;
   min-height: 40vh;
   padding-top: 80px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 header nav {
   background-color: rgba(253, 114, 90, 0.7137254902);
@@ -554,7 +557,7 @@ html, body {
   letter-spacing: 4px;
   color: #878d8d;
   font-weight: 600;
-  font-size: 0.5rem;
+  font-size: 0.8rem;
 }
 .stack h2 {
   font-size: 36px;
@@ -621,7 +624,7 @@ html, body {
   letter-spacing: 4px;
   color: #878d8d;
   font-weight: 600;
-  font-size: 0.5rem;
+  font-size: 0.8rem;
 }
 .projectsTitle h2 {
   font-size: 36px;
@@ -762,14 +765,6 @@ html, body {
           transform: rotateY(180deg);
 }
 
-.projectTwo {
-  margin-top: 100px;
-}
-
-.projectFour {
-  margin-top: 100px;
-}
-
 .contact {
   background: #f7f7f7;
   min-height: 50vh;
@@ -787,7 +782,7 @@ html, body {
   letter-spacing: 4px;
   color: #878d8d;
   font-weight: 600;
-  font-size: 0.5rem;
+  font-size: 0.8rem;
 }
 .contactTitle h2 {
   font-size: 36px;
@@ -814,38 +809,6 @@ html, body {
           box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.3);
 }
 
-.contactInformation ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-left: 0;
-}
-.contactInformation li {
-  -webkit-box-shadow: 0 0px 0px 10px rgba(255, 79, 100, 0.18);
-          box-shadow: 0 0px 0px 10px rgba(255, 79, 100, 0.18);
-  border-radius: 50px;
-  background: #f47a65;
-  margin: 0 20px;
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
-  transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
-}
-.contactInformation i {
-  text-align: center;
-  color: #333;
-  height: 45px;
-  width: 45px;
-  line-height: 45px;
-}
-.contactInformation i:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
 .contactForm form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -854,11 +817,10 @@ html, body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 50px;
 }
 .contactForm form .name, .contactForm form .email, .contactForm form .message {
   border: none;
-  border-bottom: solid 2px grey;
+  border-bottom: dotted 2px grey;
   background-color: #f7f7f7;
   color: grey;
   text-align: left;
@@ -869,7 +831,7 @@ html, body {
   width: calc(50% - 80px);
 }
 .contactForm form .message {
-  border: solid 2px grey;
+  border: dotted 2px grey;
   width: calc(100% - 80px);
 }
 .contactForm form textarea {
@@ -924,6 +886,9 @@ html, body {
           transform: scale(1.1);
   cursor: pointer;
 }
+.contactForm fieldset {
+  border: none;
+}
 
 @media (max-width: 1225px) {
   .projectTwo, .projectFour {
@@ -943,7 +908,6 @@ html, body {
   .flexContainer .aboutRight {
     margin-top: 60px;
   }
-
   .aboutMe {
     padding: 70px;
   }
@@ -961,7 +925,6 @@ html, body {
   form .name, form .email {
     width: calc(100% - 80px) !important;
   }
-
   header h1 {
     font-size: 3rem;
   }
@@ -978,7 +941,6 @@ html, body {
   nav a {
     color: white !important;
   }
-
   nav ul {
     display: none;
     -webkit-box-orient: vertical;
@@ -986,7 +948,6 @@ html, body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-
   nav ul.show {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -995,7 +956,6 @@ html, body {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-
   .hamburger {
     display: block;
     position: absolute;
@@ -1025,11 +985,9 @@ html, body {
   .hamburger .fa-xmark {
     display: none;
   }
-
   .fa-bars.hide {
     display: none;
   }
-
   .fa-xmark.present {
     display: block;
     left: 18%;
@@ -1038,11 +996,9 @@ html, body {
   .fa-xmark.present:hover {
     color: #333;
   }
-
   header nav.sticky ul li a {
     text-decoration: none;
   }
-
   header nav.sticky {
     border-bottom: none;
   }
@@ -1052,15 +1008,12 @@ html, body {
     width: 380px;
     height: 300px;
   }
-
   h3, h4, p {
     font-size: 0.7rem !important;
   }
-
   span {
     display: none;
   }
-
   .icons i {
     margin: 0px 5px;
   }
@@ -1069,7 +1022,6 @@ html, body {
   .navMenu a {
     font-size: 0.6rem;
   }
-
   .aboutLeft .imgContainer {
     height: 200px;
     width: 200px;
@@ -1080,17 +1032,67 @@ html, body {
   .aboutLeft .imgContainer::after {
     display: none;
   }
-
   .aboutMe {
     padding: 0;
   }
-
   .flipBox {
     width: 300px;
     height: 300px;
   }
-
   h3, h4, p {
     font-size: 0.6rem !important;
   }
+}
+footer {
+  background: #f47a65;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer p {
+  margin: 0 20px;
+  color: #333;
+  font-size: 1rem;
+  font-family: "Josefin Sans";
+}
+
+.contactInformation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 0;
+  margin: 10px 20px;
+}
+.contactInformation li {
+  -webkit-box-shadow: 0 0px 0px 0px;
+          box-shadow: 0 0px 0px 0px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.705);
+  margin: 0 10px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+.contactInformation i {
+  text-align: center;
+  font-size: 1rem;
+  padding: 0;
+  padding-top: 12px;
+  color: #333;
+  height: 45px;
+  width: 45px;
+}
+.contactInformation i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }

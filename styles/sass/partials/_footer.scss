@@ -1,0 +1,40 @@
+footer {
+    background: $mainCoral;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    p {
+        margin: 0 20px;
+        color: $tertiary;
+        font-size: 1rem;
+        font-family: $baseFont;
+    }
+}
+
+.contactInformation {
+    ul {
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        margin: 10px 20px;
+    }
+    li {
+        box-shadow: 0 0px 0px 0px;
+        border-radius: 50px;
+        background: rgba(255, 255, 255, 0.705);
+        margin: 0 10px;
+        transition: transform .2s;
+    }
+    i {
+        text-align: center;
+        font-size: 1rem;
+        padding: 0;
+        padding-top: 12px;
+        color: #333;
+        height: 45px;
+        width: 45px;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
