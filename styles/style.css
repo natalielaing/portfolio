@@ -765,6 +765,15 @@ html, body {
           transform: rotateY(180deg);
 }
 
+.projectOne, .projectTwo {
+  border-bottom: rgba(253, 114, 90, 0.8431372549) 1px solid;
+  border-top: rgba(253, 114, 90, 0.8431372549) 1px solid;
+}
+
+.projectThree, .projectFour {
+  border-bottom: rgba(253, 114, 90, 0.8431372549) 1px solid;
+}
+
 .contact {
   background: #f7f7f7;
   min-height: 50vh;

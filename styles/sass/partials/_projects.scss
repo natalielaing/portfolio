@@ -138,3 +138,13 @@
     transform: rotateY(180deg);
 }
 
+
+.projectOne, .projectTwo {
+    border-bottom: $secondary 1px solid;
+    border-top: $secondary 1px solid;
+}
+
+.projectThree, .projectFour {
+    border-bottom: $secondary 1px solid;
+}
+
