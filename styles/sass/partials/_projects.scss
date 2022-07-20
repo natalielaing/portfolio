@@ -36,7 +36,7 @@
     }
 
 .projectList {
-    border: .9px grey dashed;
+    border: .9px $secondary solid;
     ul {
         display: flex;
         flex-wrap: wrap;
@@ -129,11 +129,12 @@
     padding: 50px 20px;
     margin: 20px;
     justify-content: space-evenly;
-
     transition: transform .5s;
+    border: grey dashed 1.5px;
 
         &:hover {
-            transform: scale(1.1);
+            transform: scale(1.03);
+            border: none;
         }
 }
 

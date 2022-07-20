@@ -652,7 +652,7 @@ html, body {
 }
 
 .projectList {
-  border: 0.9px grey dashed;
+  border: 0.9px rgba(253, 114, 90, 0.8431372549) solid;
 }
 .projectList ul {
   display: -webkit-box;
@@ -757,10 +757,12 @@ html, body {
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
+  border: grey dashed 1.5px;
 }
 .projectBox:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  border: none;
 }
 
 .contact {
