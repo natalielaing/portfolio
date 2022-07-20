@@ -4,6 +4,21 @@
     }
 }
 
+@media (max-width: 1000px) {
+    .projectBox {
+        flex-direction: column;
+        align-items: center;
+    }
+    .boxTwo, .boxFour {
+        flex-direction: column-reverse;
+    }
+
+    .projectText {
+        width: 90%;
+    }
+
+}
+
 @media (max-width: 965px) {
     .flexContainer {
         display:block;
@@ -144,6 +159,12 @@
 
 
 @media (max-width: 425px) {
+
+    .projectImgContainer {
+        width: 260px;
+        height: 200px;
+
+}
     .navMenu {
         a {
             font-size: .6rem;

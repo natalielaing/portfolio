@@ -665,53 +665,26 @@ html, body {
           justify-content: space-evenly;
 }
 
-.flipBox {
-  width: 450px;
-  height: 320px;
-  margin: 50px 50px;
+.projectImgContainer {
+  width: 350px;
+  height: 250px;
+  margin: auto 10px;
   -webkit-perspective: 1000px;
           perspective: 1000px;
 }
-
-.flipImg, .front, .back {
-  width: 100%;
-  height: 100%;
-}
-
-.flipImg {
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transition: 1s;
-  transition: 1s;
-  -webkit-box-shadow: 0px 0px 10px 2px grey;
-          box-shadow: 0px 0px 10px 2px grey;
-  border-radius: 5%;
-}
-
-.front {
-  position: absolute;
-  cursor: pointer;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-}
-.front img {
+.projectImgContainer img {
   height: 100%;
   width: 100%;
   border-radius: 5%;
 }
 
-.back {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  background: white;
+.projectText {
   padding: 20px;
-  position: absolute;
   bottom: 0px;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
   border-radius: 5%;
+  width: 55%;
 }
-.back h3, .back h4, .back p {
+.projectText h3, .projectText h4, .projectText p {
   color: #333;
   text-align: center;
   padding: 5px;
@@ -719,14 +692,14 @@ html, body {
   font-weight: normal;
   margin: 0;
 }
-.back h3 {
+.projectText h3 {
   font-style: italic;
   font-weight: bold;
 }
-.back p {
+.projectText p {
   margin: 0;
 }
-.back .iconFlex {
+.projectText .iconFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -734,11 +707,11 @@ html, body {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.back img {
+.projectText img {
   height: 30px;
   width: 30px;
 }
-.back .anchorFlex {
+.projectText .anchorFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -746,7 +719,7 @@ html, body {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
-.back a {
+.projectText a {
   background: rgba(253, 114, 90, 0.8431372549);
   text-decoration: none;
   color: white;
@@ -754,24 +727,40 @@ html, body {
   border-radius: 10px;
   margin-top: 20px;
 }
-.back a:hover {
+.projectText a:hover {
   color: rgba(253, 114, 90, 0.8431372549);
   background: white;
   border: dashed rgba(253, 114, 90, 0.8431372549) 1px;
 }
 
-.flipBox:hover .flipImg {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+.description a {
+  background: none;
+  color: rgba(253, 114, 90, 0.8431372549);
+}
+.description a:hover {
+  cursor: pointer;
+  background: none;
+  border: none;
+  text-decoration: underline;
 }
 
-.projectOne, .projectTwo {
-  border-bottom: rgba(253, 114, 90, 0.8431372549) 1px solid;
-  border-top: rgba(253, 114, 90, 0.8431372549) 1px solid;
+.projectBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px 20px;
+  margin: 20px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
-
-.projectThree, .projectFour {
-  border-bottom: rgba(253, 114, 90, 0.8431372549) 1px solid;
+.projectBox:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .contact {
@@ -904,6 +893,26 @@ html, body {
     margin-top: 0px;
   }
 }
+@media (max-width: 1000px) {
+  .projectBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .boxTwo, .boxFour {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .projectText {
+    width: 90%;
+  }
+}
 @media (max-width: 965px) {
   .flexContainer {
     display: block;
@@ -1028,6 +1037,10 @@ html, body {
   }
 }
 @media (max-width: 425px) {
+  .projectImgContainer {
+    width: 260px;
+    height: 200px;
+  }
   .navMenu a {
     font-size: 0.6rem;
   }

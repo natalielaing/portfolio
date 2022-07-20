@@ -44,46 +44,24 @@
     }
 }
 
-.flipBox {
-    width: 450px;
-    height: 320px;
-    margin: 50px 50px;
+.projectImgContainer {
+    width: 350px;
+    height: 250px;
+    margin: auto 10px;
     perspective: 1000px;
-}
 
-.flipImg, .front, .back {
-    width: 100%;
-    height: 100%;
-}
-
-.flipImg {
-    // position: relative;
-    transform-style: preserve-3d;
-    transition: 1s;
-    box-shadow: 0px 0px 10px 2px grey;
-    border-radius: 5%;
-}
-
-.front {
-    position: absolute; 
-    cursor: pointer; 
-    backface-visibility: hidden;
     img {
         height: 100%;
         width: 100%;
         border-radius: 5%;
-    
     }
 }
 
-.back {
-    transform: rotateY(180deg);
-    background: white;
+.projectText {
     padding: 20px;
-    position: absolute;
     bottom: 0px;
-    backface-visibility: hidden;
     border-radius: 5%;
+    width: 55%;
 
     h3, h4, p {
         color:$tertiary;
@@ -134,17 +112,28 @@
 
 }
 
-.flipBox:hover .flipImg {
-    transform: rotateY(180deg);
+.description a {
+    background: none;
+    color: $secondary;
+    &:hover {
+        cursor: pointer;
+        background: none;
+        border: none;
+        text-decoration: underline;
+    }
 }
 
 
-.projectOne, .projectTwo {
-    border-bottom: $secondary 1px solid;
-    border-top: $secondary 1px solid;
-}
+.projectBox {
+    display: flex;
+    padding: 50px 20px;
+    margin: 20px;
+    justify-content: space-evenly;
 
-.projectThree, .projectFour {
-    border-bottom: $secondary 1px solid;
+    transition: transform .5s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
 }
 
