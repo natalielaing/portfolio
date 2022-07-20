@@ -390,6 +390,10 @@ header i {
   outline: none;
 }
 
+.displayNone {
+  display: none;
+}
+
 html {
   font-size: 125%;
 }
