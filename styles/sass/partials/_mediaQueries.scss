@@ -160,6 +160,10 @@
 
 @media (max-width: 425px) {
 
+    header {
+        background-attachment:scroll;
+    }
+
     .projectImgContainer {
         width: 260px;
         height: 200px;

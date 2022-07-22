@@ -390,10 +390,6 @@ header i {
   outline: none;
 }
 
-.displayNone {
-  display: none;
-}
-
 html {
   font-size: 125%;
 }
@@ -1043,6 +1039,9 @@ html, body {
   }
 }
 @media (max-width: 425px) {
+  header {
+    background-attachment: scroll;
+  }
   .projectImgContainer {
     width: 260px;
     height: 200px;
